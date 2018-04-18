@@ -1,4 +1,4 @@
-exports.testData = [
+export const testData = [
     {
         first_link_text: 'Cypress.io: JavaScript End to End Testing Framework',
         number_of_results: 13,
@@ -13,10 +13,10 @@ exports.testData = [
     }
 ];
 
-exports.timeout = {
+export const timeout = {
     short: 600
 };
 
-exports.commonData = {
+export const commonData = {
     google_url: 'google.pl/'
 };

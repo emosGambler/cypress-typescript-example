@@ -1,5 +1,10 @@
 {
   "baseUrl": "http://google.pl",
   "projectId": "qgrtvx",
-  "reporter": "mochawesome"
+  "reporter": "mochawesome",
+  "fixturesFolder": "tmp/fixtures/",
+  "integrationFolder": "tmp/tests/",
+  "screenshotsFolder": "tmp/screenshots/",
+  "supportFile": "tmp/support/",
+  "videosFolder": "tmp/videos/"
 }

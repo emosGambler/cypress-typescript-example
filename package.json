@@ -4,9 +4,10 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "clean": "rimraf mochawesome-report",
-    "test": "npm run clean && cypress open",
-    "test:report": "npm run clean && cypress run --reporter mochawesome --config videoRecording=false && start ./mochawesome-report/mochawesome.html"
+    "clean": "rimraf mochawesome-report/ && rimraf tmp/",
+    "test": "npm run clean && npm run tsc && cypress open",
+    "test:report": "npm run clean && cypress run --reporter mochawesome --config videoRecording=false && start ./mochawesome-report/mochawesome.html",
+    "tsc": "npm run clean && tsc"
   },
   "repository": {
     "type": "git",
@@ -23,6 +24,7 @@
     "jasmine-data-provider": "^2.2.0",
     "mocha": "^5.1.0",
     "mochawesome": "^3.0.2",
-    "rimraf": "^2.6.2"
+    "rimraf": "^2.6.2",
+    "typescript": "^2.8.1"
   }
 }
